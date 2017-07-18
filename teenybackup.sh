@@ -4,22 +4,6 @@
 ## In order to read various places like /etc fully, you'll need to run this as root. Note 
 ## that after the backup archive is created, ownership is changed to a backup user.
 
-## FILE BACKUP PARAMETERS ##########################################################################
-#BACKUP_PACKAGE_PREFIX="backup_"
-#BACKUP_DIR_NAME="Backups"
-#BACKUP_ROOT="/www/mydomain.com/www/$BACKUP_DIR_NAME"
-#BACKUP_DEST_FILE_DIR="$BACKUP_ROOT/$BACKUP_PACKAGE_PREFIX`date +%Y-%m-%d`"
-#BACKUP_SRC_DIR="/www/mydomain.com/www"
-#BACKUP_PACKAGE_OWNER="backupuser"
-#NUMBER_OF_BACKUPS_TO_KEEP="7"
-
-#MYSQL_USER="yetanotherusername"
-#MYSQL_PASSWD="myhighlysecurepassword"
-#MYSQL_DUMP_FILE_DEST="$BACKUP_DEST_FILE_DIR/Database"
-#MYSQL_DATABASENAME="mydatabase"
-
-#FILE_COPY_DEST="$BACKUP_DEST_FILE_DIR/Files"
-
 if [ "$#" -ne 1 ] ; then
 	echo -e "Expected a parameter to be supplied directing us to a file of variables to source"
 	exit -1
